@@ -13,7 +13,7 @@ admin.site.register(Ticketing)
 
 @admin.register(Store)
 class StoreAdmin(admin.ModelAdmin):
-    list_display = ('name','quantity','amount','date')
+    list_display = ('name','quantity','amount','date','status','description')
     ordering =  ('date',)
     search_fields = ('name','amount')
     list_filter = ('amount','quantity')

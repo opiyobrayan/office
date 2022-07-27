@@ -5,11 +5,11 @@ from django.db import models
 
 class Store(models.Model):
     name = models.CharField('Product Name', max_length=120)
-    quantity = models.IntegerField('quantity', max_length=120, blank=True)
+    quantity = models.IntegerField('quantity', max_length=120, blank=True,null=True)
     amount = models.IntegerField('Amount', max_length=120)
-    status = models.TextChoices( 'Added','Used')
+    status = models.CharField( 'status', max_length=120)
     date= models.DateTimeField('Date')
-    descriprion= models.TextField('description', blank=True)
+    description= models.TextField('description', blank=True,null=True)
 
     def __str__(self):
         return self.name

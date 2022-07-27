@@ -20,3 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('activities.urls'))
 ]
+
+admin.site.site_header='KELIN OFFICE SYTSTEM'
+admin.site.site_title='KELIN'
+admin.site.index_title=' Welcome to KELIN office adminstration system'

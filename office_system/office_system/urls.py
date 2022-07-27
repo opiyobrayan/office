@@ -16,9 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
-from office_system import activities
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include(activities.urls))
+    path('',include('activities.urls'))
 ]

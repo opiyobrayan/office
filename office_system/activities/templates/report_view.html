@@ -1,0 +1,21 @@
+
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+- pandas
+- requests
+- paths:
+    - /store.csv
+    </py-env>
+<html>
+
+    <py-script>
+    response = requests.get("http://127.0.0.1:8000/store")
+    json_data = response.json()
+    print(json_data)
+    </py-script>|
+
+</html>
+
+
+

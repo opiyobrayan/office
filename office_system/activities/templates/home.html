@@ -1,33 +1,36 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-<py-env>
-    - pandas
+<!--<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />-->
+<!--<script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
+<!--<py-env>-->
+<!--    - pandas-->
 
-</py-env>
+<!--</py-env>-->
 
 <body>
+{% block content %}
 <h1>
 
 <!--    {% for s in  stores %}-->
 <!--         <li> name:  {{ s.name }}</li>-->
 <!--    {% endfor %}-->
 </h1>
-<py-script>
-  import pandas as pd
+<!--<py-script>-->
+<!--  import pandas as pd-->
 
-  df =pd.read_csv('Users\user\Desktop\office\office_system\activities\templates\msft.csv',encoding = "utf-8")
-</py-script>
+<!--  df =pd.read_csv('Users\user\Desktop\office\office_system\activities\templates\msft.csv',encoding = "utf-8")-->
+<!--</py-script>-->
 <center>
 <h1>
     Welcome to KELIN Office Admin System
 </h1>
 </center>
 
+{% endblock %}
 </body>
 </html>

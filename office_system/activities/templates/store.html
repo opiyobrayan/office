@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<h1> Items in the Store</h1>
+<br>
+{% for item in store_list %}
+    <div class="card">
+      <h5 class="card-header">{{item}}</h5>
+      <div class="card-body">
+        <ul class="card-title"><b> Quantity :</b> {{item.quantity}}</ul>
+        <ul class="card-title"><b> Description :</b> {{item.description}}</ul>
+        <ul class="card-title"><b> Last updated :</b> {{item.date}}</ul>
+      </div>
+    </div>
+    <br>
+{% endfor %}
+
+
+<!--<h1> Items in the Store</h1>-->
+<!--{% for item in store_list %}-->
+<!--    <ul class="store items ">-->
+<!--        <strong>{{ item }}</strong>-->
+<!--        <ul> <b>Quantity</b> : {{ item.quantity  }}</ul>-->
+<!--        <ul> <b>Last Updated</b> :{{ item.date  }}</ul>-->
+<!--        <ul> <b>Description</b> :{{ item.description  }}</ul>-->
+<!--        <br>-->
+<!--    </ul>-->
+
+<!--{% endfor %}-->
+
+{% endblock %}
+</body>
+</html>

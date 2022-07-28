@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<!--<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />-->
-<!--<script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
-<!--<py-env>-->
-<!--    - paths-->
-<!--</py-env>-->
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<py-env>
+    - pandas
+
+</py-env>
 
 <body>
 <h1>
@@ -17,9 +18,11 @@
 <!--         <li> name:  {{ s.name }}</li>-->
 <!--    {% endfor %}-->
 </h1>
-<!--<py-script>-->
-<!--  print('Hello World')-->
-<!--</py-script>-->
+<py-script>
+  import pandas as pd
+
+  df =pd.read_csv('Users\user\Desktop\office\office_system\activities\templates\msft.csv',encoding = "utf-8")
+</py-script>
 <center>
 <h1>
     Welcome to KELIN Office Admin System

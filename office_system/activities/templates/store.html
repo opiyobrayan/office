@@ -7,7 +7,12 @@
 </head>
 <body>
 {% block content %}
+<br>
 <h1> Items in the Store</h1>
+<a href="{% url 'store-csv' %}"> Download row data</a>
+<br>
+<br>
+<a href="http://127.0.0.1:8888/notebooks/Downloads/kelin-report.ipynb"> Download Report</a>
 <br>
 {% for item in store_list %}
     <div class="card">
@@ -15,6 +20,8 @@
       <div class="card-body">
         <ul class="card-title"><b> Quantity :</b> {{item.quantity}}</ul>
         <ul class="card-title"><b> Description :</b> {{item.description}}</ul>
+        <ul class="card-title"><b> Amount spent :</b> {{item.amount}}</ul>
+        <ul class="card-title"><b> Action :</b> {{item.status}}</ul>
         <ul class="card-title"><b> Last updated :</b> {{item.date}}</ul>
       </div>
     </div>

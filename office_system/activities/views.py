@@ -29,10 +29,10 @@ def store_csv(request):
 
     stores=Store.objects.all()
 
-    writer.writerow(['product name','quantity','last modified','action'])
+    writer.writerow(['product name','quantity','Amount spent','action','last modified',])
     list1=[]
     for s in stores:
-        writer.writerow([s.name,s.quantity,s.date,s.status])
+        writer.writerow([s.name,s.quantity,s.amount,s.status,s.date])
 
 
     return response

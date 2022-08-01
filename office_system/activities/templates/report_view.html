@@ -1,21 +1,29 @@
 
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    <py-env>
-- pandas
-- requests
-- paths:
-    - /store.csv
-    </py-env>
-<html>
+<!--<head>-->
+<!--    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />-->
+<!--    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
+<!--     <py-env>-->
+<!-- - numpy-->
+<!-- - pandas-->
 
-    <py-script>
-    response = requests.get("http://127.0.0.1:8000/store")
-    json_data = response.json()
-    print(json_data)
-    </py-script>|
+<!--    </py-env>-->
+<!--</head>-->
+<!--<body>-->
+<!--   <form onsubmit = 'return false'>-->
+<!--   <label for="fpath">ficdlepath</label>-->
+<!--   <input type="text" id="fpath" name="filepath" placeholder="Your name..">-->
+<!--   <input pys-onClick="onSub" type="submit" id="btn-form" value="submit">-->
+<!--    </form>-->
+<!--<div id="outp"></div>-->
+<!--    <py-script>-->
+<!--        import pandas as pd-->
+<!--        def onSub(*args, **kwargs):-->
+<!--            file_path = document.getElementById('fpath').value-->
+<!--            df = pd.read_csv(file_path)-->
+<!--            pyscript.write("outp",df.head())-->
+<!--    </py-script>-->
+<!--</body>-->
 
-</html>
 
 
 

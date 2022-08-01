@@ -3,6 +3,8 @@ from . models  import Store
 from . models  import Transport
 from . models  import Ticketing
 from . models  import Hotel
+# from . models  import Iec
+from . models  import Out
 
 # Register your models here.
 
@@ -10,6 +12,8 @@ from . models  import Hotel
 admin.site.register(Transport)
 admin.site.register(Hotel)
 admin.site.register(Ticketing)
+admin.site.register(Out)
+# admin.site.register(Iec)
 
 @admin.register(Store)
 class StoreAdmin(admin.ModelAdmin):

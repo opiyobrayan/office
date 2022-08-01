@@ -6,7 +6,7 @@ class Store(models.Model):
     quantity = models.IntegerField('quantity', max_length=120, blank=True,null=True)
     amount = models.IntegerField('Amount', max_length=120,blank=True,null=True)
     status = models.CharField( 'status', max_length=120)
-    date= models.DateField('Date',max_length=60)
+    date= models.DateTimeField('Date',max_length=60)
     description= models.TextField('description', blank=True,null=True)
 
     def __str__(self):
